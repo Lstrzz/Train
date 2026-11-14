@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Train",
+    "slug": "Train",
+    "version": "1.0.0",
+    "scheme": "train",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#080C16",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.train.app"
+    },
+    "android": {
+      "package": "com.train.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#080C16",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "enableBackgroundPlayback": false
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "7560f0d2-3501-4cc8-a417-5318a1166651"
+      }
+    },
+    "owner": "lostore"
+  }
+}
